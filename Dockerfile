@@ -5,7 +5,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q git autoconf build-esse
 RUN useradd -d /opt/Espressif -m -s /bin/bash esp8266
 RUN echo "esp8266 ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/esp8266
 RUN chmod 0440 /etc/sudoers.d/esp8266
-RUN su esp8266 -c "git clone -b lx106 git://github.com/jcmvbkbc/crosstool-NG.git"
+RUN su esp8266 -c "cd ~; git clone -b lx106 git://github.com/jcmvbkbc/crosstool-NG.git"
 RUN su esp8266 -c "cd ~/crosstool-NG && ./bootstrap"
 RUN su esp8266 -c "cd ~/crosstool-NG && ./configure --prefix=`pwd`"
 RUN su esp8266 -c "cd ~/crosstool-NG && make"
