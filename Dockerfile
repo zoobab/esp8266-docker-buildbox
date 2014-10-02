@@ -20,4 +20,4 @@ RUN su esp8266 -c "wget -q http://rghost.net/download/58019758/eff3feb46a2047a0d
 RUN su esp8266 -c "cd /opt/Espressif/; unzip esp8266_sdk_v0.9.1.zip; mv esp8266_sdk_v0.9.1 ESP8266_SDK; ls -lha"
 RUN su esp8266 -c "wget -q http://filez.zoobab.com/esp8266/esptool-0.0.2.zip -O /opt/Espressif/ESP8266_SDK/esptool-0.0.2.zip"
 RUN su esp8266 -c "cd /opt/Espressif/ESP8266_SDK; unzip esptool-0.0.2.zip"
-RUN su esp8266 -c "cd /opt/Espressif/ESP8266_SDK/esptool; sed -i "s/WINDOWS/LINUX/g" Makefile; make"
+RUN su esp8266 -c "cd /opt/Espressif/ESP8266_SDK/esptool; sed -i 's/WINDOWS/LINUX/g' Makefile; make"
