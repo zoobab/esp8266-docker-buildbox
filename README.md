@@ -1,8 +1,13 @@
 ESP8266 Docker Buildbox
+=======================
 
-Usage:
+Usage
+=====
 
-sudo docker build .
+> sudo docker build .
+
+TTYUSB0
+=======
 
 You can export the ttyUSB0 device from the HOST to the GUEST instance with this command:
 
