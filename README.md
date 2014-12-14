@@ -6,8 +6,8 @@ Usage
 
 > sudo docker build .
 
-TTYUSB0
-=======
+Export the serial adaptor
+=========================
 
 You can export the ttyUSB0 device from the HOST to the GUEST instance with this command:
 
