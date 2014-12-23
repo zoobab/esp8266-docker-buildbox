@@ -18,3 +18,10 @@ You can export the ttyUSB0 device from the HOST to the GUEST instance with this 
 > /dev/tty  /dev/tty-from-host  /dev/tty0  /dev/tty1  /dev/tty2
 > /dev/tty3  /dev/tty4  /dev/tty5  /dev/tty6  /dev/tty7  /dev/tty8
 > /dev/tty9
+
+Todo
+====
+
+* Add blinky example
+* Add esptool to push blinky example
+* Find some other simpler examples
